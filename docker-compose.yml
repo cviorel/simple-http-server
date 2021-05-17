@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+  simple-http-server:
+    hostname: simple-http-server
+    image: cviorel/simple-http-server:latest
+    container_name: simple-http-server
+    volumes:
+      - "/mnt/iso:/serve"
+    ports:
+      - "8081:8000"
